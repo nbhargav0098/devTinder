@@ -1,0 +1,13 @@
+const express = require("express");
+
+const app = express();
+
+app.use("/test",(req,res)=>{
+  res.send("Hello Bhargav")
+})
+
+app.use("/newTab",(req,res)=>{
+  res.send("This is new tab")
+})
+
+app.listen(3000, ()=>{ console.log("server is listening on 3000 port")});
